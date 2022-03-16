@@ -12,6 +12,6 @@ class Employee extends Model
     protected $guarded = ['id'];
 
     public function timeclockEvents() {
-        return $this->hasMany('TimeclockEvent');
+        return $this->hasMany(TimeclockEvent::class);
     }
 }
