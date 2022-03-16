@@ -47,3 +47,21 @@ When considering the naming conventions for your API remember the REST conventio
 With this in mind you are ready to tackle the problems laid out in ```routes/api.php```. If you are ever stuck refer to the 'solution' branch which will provide the solutions to each problem.
 
 ### Good luck!
+
+## What to do next?
+
+There is much more to learn about creating an API. You can learn more about the Laravel Framework by reading the [Laravel Documentation](https://laravel.com/docs/9.x/installation) and the [REST API guide](https://www.restapitutorial.com/). 
+
+Some topics to learn more about:
+* Validation
+* Authentication
+* Query parameters
+* MVC Architecture
+* Middleware
+* Cookies
+
+These are just a few topics to expand and what you've learned! Web APIs provide exciting ways to build applications.
+
+## Already got a start in web development?
+
+You may be a great fit for our team! [Submit an application](https://yourmaidenvoyage.com/who-we-are#apply), we'd love to see you join our team!
