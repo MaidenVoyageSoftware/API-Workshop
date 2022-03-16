@@ -33,4 +33,17 @@ Now that your web server is not set up, head over to ```routes/api.php``` fo fin
 
 Here is where all of the routes related to your API are housed.
 
-There is already some template code to help you get started. We will be building a simple API to perform some tasks related to the ```Employee``` table in the database. Laravel 
+There is already some template code to help you get started. We will be building a simple API to perform some tasks related to the ```Employee``` table in the database. Laravel has a built-in tool called Eloquent, that provides a simple way to access your database.
+
+When considering the naming conventions for your API remember the REST convention:
+
+``` www.example.com/(resource)/(identifier)/(modifier) ```
+
+* Your resource is usually in plural for such as Employees, Tasks, Reports, Sales, etc.
+* Your identifier is usually the id of your resource such as 1,2,334, 543345, etc. Oftentimes it is also in a UUID format such as 4633c165-8c23-4f75-8126-b8292bd620eb. The identifier is unique to the resource and therefore ensures you can access the exact resource over and over when providing the same id.
+* Lastly your modifier may indicate a relationship between your resource and another related resource such as employees/1/sales to retrieve the sales associated with your employee.
+
+
+With this in mind you are ready to tackle the problems laid out in ```routes/api.php```. If you are ever stuck refer to the 'solution' branch which will provide the solutions to each problem.
+
+### Good luck!
