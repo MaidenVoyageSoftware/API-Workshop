@@ -51,7 +51,7 @@ use Illuminate\Support\Facades\Route;
 |
 | What HTTP method is best for sending data?
 */
-Route::___('', function () {
+Route::get('/helloworld', function () {
     return 'Hello, World!';
 });
 
@@ -61,8 +61,10 @@ Route::___('', function () {
 |
 | What HTTP method is best for sending data?
 */
-Route::___('', function () {
+Route::get('/employees', function () {
+    $employees = Employee::all();
 
+    return $employees;
 });
 
 /*
@@ -71,8 +73,10 @@ Route::___('', function () {
 |
 | What HTTP method is best for sending this employee data?
 */
-Route::___('', function (Request $request) {
+Route::get('/employees/{id}', function (Request $request) {
+    $employee = Employee::find($request->id);
 
+    return $employee;
 });
 
 /*
@@ -81,8 +85,16 @@ Route::___('', function (Request $request) {
 |
 | What HTTP method is best for sending new data to the server?
 */
-Route::___('', function (Request $request) {
+Route::post('/employees', function (Request $request) {
+    $employee = Employee::create([
+        'name' => $request->name,
+        'email' => $request->email,
+        'phone' => $request->phone
+    ]);
 
+    $employee->save();
+
+    return $employee;
 });
 
 /*
@@ -92,8 +104,19 @@ Route::___('', function (Request $request) {
 |
 | What HTTP method is best for updating an existing resource?
 */
-Route::___('', function (Request $request) {
+Route::put('/employees/{id}', function (Request $request) {
 
+    $employee = Employee::find($request->id);
+
+    $employee->update([
+        'name' => $request->name,
+        'email' => $request->email,
+        'phone' => $request->phone
+    ]);
+
+    $employee->save();
+
+    return $employee;
 });
 
 /*
@@ -102,8 +125,12 @@ Route::___('', function (Request $request) {
 |
 | What HTTP method is best to indicate that we want to delete a resource?
 */
-Route::___('', function (Request $request) {
+Route::delete('/employees/{id}', function (Request $request) {
+    $employee = Employee::find($request->id);
 
+    $employee->delete();
+
+    return $employee;
 });
 
 /*
@@ -113,8 +140,10 @@ Route::___('', function (Request $request) {
 |
 | What HTTP method is best for returning this data?
 */
-Route::___('', function (Request $request) {
+Route::get('/employees/{id}/timeclock-events', function (Request $request) {
+    $employee = Employee::find($request->id);
 
+    return $employee->timeclockEvents;
 });
 
 
