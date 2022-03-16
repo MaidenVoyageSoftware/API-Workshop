@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "ebe62473-87ff-430f-995e-fb5ec153af2b",
+		"name": "AwesomeAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello, World!",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/helloworld",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"helloworld"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/employees",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/employees/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "John Doe",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "johndoe@example.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "801-555-5555",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/api/employees",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Existing Employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Tony Stark  ",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "tony@starkindustries.org",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "801-555-1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost/api/employees/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Existing Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/employees/4",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"employees",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Timeclock Events From Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/employees/1/timeclock-events",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"employees",
+						"1",
+						"timeclock-events"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
