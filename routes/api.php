@@ -51,9 +51,9 @@ use Illuminate\Support\Facades\Route;
 |
 | What HTTP method is best for sending data?
 */
-Route::___('', function () {
-    return 'Hello, World!';
-});
+// Route::___('', function () {
+//     return 'Hello, World!';
+// });
 
 /*
 | Let's send a response containing a list of all our employees
@@ -61,9 +61,9 @@ Route::___('', function () {
 |
 | What HTTP method is best for sending data?
 */
-Route::___('', function () {
+// Route::___('', function () {
 
-});
+// });
 
 /*
 | Let's send a response containing a single employee
@@ -71,9 +71,9 @@ Route::___('', function () {
 |
 | What HTTP method is best for sending this employee data?
 */
-Route::___('', function (Request $request) {
+// Route::___('', function (Request $request) {
 
-});
+// });
 
 /*
 | Let's create a new employee
@@ -81,9 +81,9 @@ Route::___('', function (Request $request) {
 |
 | What HTTP method is best for sending new data to the server?
 */
-Route::___('', function (Request $request) {
+// Route::___('', function (Request $request) {
 
-});
+// });
 
 /*
 | Let's update an existing employee
@@ -92,9 +92,9 @@ Route::___('', function (Request $request) {
 |
 | What HTTP method is best for updating an existing resource?
 */
-Route::___('', function (Request $request) {
+// Route::___('', function (Request $request) {
 
-});
+// });
 
 /*
 | Let's delete an existing employee
@@ -102,9 +102,9 @@ Route::___('', function (Request $request) {
 |
 | What HTTP method is best to indicate that we want to delete a resource?
 */
-Route::___('', function (Request $request) {
+// Route::___('', function (Request $request) {
 
-});
+// });
 
 /*
 | (Bonus)
@@ -113,9 +113,9 @@ Route::___('', function (Request $request) {
 |
 | What HTTP method is best for returning this data?
 */
-Route::___('', function (Request $request) {
+// Route::___('', function (Request $request) {
 
-});
+// });
 
 
 
