@@ -24,8 +24,17 @@ You will first want to start by installing the software required for our follow 
 1. [Docker](https://www.docker.com/products/docker-desktop) (Download and install for your system)
 2. [Postman](https://www.postman.com/downloads/) (Used to send requests to your API)
 3. Clone the master branch
-4. Run in terminal ```./vendor/bin/sail up -d```
-5. Docker will now initialize the PHP container and your server should be up and running!
+4. Copy and run this command within the project directory
+``` 
+docker run --rm \
+-u "$(id -u):$(id -g)" \
+-v $(pwd):/opt \
+-w /opt \
+laravelsail/php81-composer:latest \
+composer install --ignore-platform-reqs
+```
+1. Run in terminal ```./vendor/bin/sail up -d``` (Make sure to run in administrator terminal on Windows!)
+2. Docker will now initialize the PHP container and your server should be up and running!
 
 ## Creating an API
 
