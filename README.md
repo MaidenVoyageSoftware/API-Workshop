@@ -38,7 +38,7 @@ composer install --ignore-platform-reqs
 
 ## Creating an API
 
-Now that your web server is not set up, head over to ```routes/api.php``` fo find the file in which we'll be working.
+Now that your web server is set up, head over to ```routes/api.php``` fo find the file in which we'll be working.
 
 Here is where all of the routes related to your API are housed.
 
